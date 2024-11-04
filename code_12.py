@@ -1,28 +1,17 @@
 def get_fibonacci_number(position):
     if position == 0:
         return 0
-    if position == 1:
+    elif position == 1:
         return 1
     
     return get_fibonacci_number (position-2) \
             +get_fibonacci_number(position-1)
 
 
-
-    # previous_a = 0
-    # previous_b = 1
-
-    # for x in range(2,position+1):
-    #     current_fibo_number = previous_a + previous_b
-    #     previous_a = previous_b
-    #     previous_b = current_fibo_number
-
-    # return previous_b
-
 def get_fibonacci_number_sequence(number):
     if number == 0:
         return[0]
-    if number == 1:
+    elif number == 1:
         return [0,1]
     
     previous_x = 0
@@ -41,6 +30,10 @@ def get_fibonacci_number_sequence(number):
 
 
 if __name__ == "__main__":
-    print(get_fibonacci_number(6))
+    position = 3
+    result = get_fibonacci_number(position)
+    print(f"Fibonacci({position}) = {result}")
 
-    print(get_fibonacci_number_sequence(5))
+    number = 6
+    result = get_fibonacci_number_sequence(number)
+    print(f"Fibonacci sequence ({number}) = {result}")
