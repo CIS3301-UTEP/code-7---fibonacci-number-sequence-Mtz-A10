@@ -7,7 +7,6 @@ def get_fibonacci_number(position):
     return get_fibonacci_number (position-2) \
             +get_fibonacci_number(position-1)
 
-
 def get_fibonacci_number_sequence(number):
     if number == 0:
         return[0]
@@ -30,10 +29,10 @@ def get_fibonacci_number_sequence(number):
 
 
 if __name__ == "__main__":
-    position = 3
+    position = 5
     result = get_fibonacci_number(position)
     print(f"Fibonacci({position}) = {result}")
 
-    number = 6
+    number = 7
     result = get_fibonacci_number_sequence(number)
     print(f"Fibonacci sequence ({number}) = {result}")
